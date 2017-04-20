@@ -1,6 +1,21 @@
 
-About test
-
 -DskipTests，不执行测试用例，但编译测试用例类生成相应的class文件至target/test-classes下。
 -Dmaven.test.skip=true，不执行测试用例，也不编译测试用例类。
+
+----------------------------------------------------------------------------------------
+
+ mvn dependency:tree -Dverbose -Dincludes=asm:asm  
+
+-----------------------------------------------------------------------------------------
+
+mvn archetype:generate -DgroupId=z.z.w.test -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+archetype:generate
+871 -- quickstart
+874 -- webapp
+
+
+
+
+
 
