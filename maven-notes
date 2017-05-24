@@ -16,6 +16,15 @@ archetype:generate
 
 
 
+mvn install:install-file 
+# windows下jar包所在的目录              -Dfile=E:\Work-juanpi\Hive_UDF\lib\rubick-1.0.0.jar
+# 分组id                               -DgroupId=com.juanpi.bi
+# artifact的名称                       -DartifactId=rubick
+# jar 包版本，根据自己的情况定义         -Dversion=1.0.0
+# 包类型如jar/zip                      -Dpackaging=jar
+# 是否创建pom文件                       -DgeneratePom=true
+
+mvn install:install-file -Dfile=\Downloads\plexus-digest-1.0.jar -DgroupId=org.codehaus.plexus -DartifactId=plexus-digest -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
 
 
 
