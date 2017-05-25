@@ -14,7 +14,7 @@ archetype:generate
 871 -- quickstart
 874 -- webapp
 
-
+--------------------------------------------------------------------------------------------------
 
 mvn install:install-file 
 # windows下jar包所在的目录              -Dfile=E:\Work-juanpi\Hive_UDF\lib\rubick-1.0.0.jar
@@ -30,7 +30,9 @@ mvn install:install-file -Dfile=\Downloads\plexus-digest-1.0.jar -DgroupId=org.c
 org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.2:sonar
 org.apache.maven.plugins:maven-assembly-plugin:2.2-beta-1:single
 
+---------------------------------------------------------------
 
+http://search.maven.org/
 
 
 
