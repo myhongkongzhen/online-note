@@ -4,7 +4,10 @@ tail -f /C/SWDTOOLS/IBM/WebSphere/AppServer85/profiles/AppSrv04/logs/server1/Sys
 unzip -o /tmp/gconfig/st/`ls -1 /tmp/gconfig/st/ | grep 'hconfig' | cut -f3 -d' '` -d /tmp/gconfig/st/
 
 
-
+export JAVA_HOME=/tmp/lek/jdk1.8
+export JAVA_BIN=$JAVA_HOME/bin
+export CLASSPATH=$JAVA_HOME/lib:$CLASSPATH
+export PATH=$JAVA_BIN:$PATH
 
 
 
