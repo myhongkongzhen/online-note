@@ -1,1 +1,5 @@
 .\packetbeat.exe -c .\packetbeat.yml -e -v
+
+
+.\scripts\import_dashboards.exe -file ..\beats-dashboards-5.4.2.zip -es http://localhost:9200
+
