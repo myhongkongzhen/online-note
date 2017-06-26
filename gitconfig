@@ -1,0 +1,25 @@
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	mg = merge  --no-ff
+[i18n]
+[gui]
+	encoding = utf-8
+[core]
+	autocrlf = true
+	quotepath = off
+	excludesfile = d:\\02_workspace\\.gitignore_global
+[http]
+	postBuffer = 524288000
+[user] 
+
+[user]
+	email = myhongkongzhen@gmail.com
+	name = Z_Z.W
+
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
