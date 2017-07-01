@@ -11,8 +11,7 @@
 mvn archetype:generate -DgroupId=z.z.w.test -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 
--DinteractiveMode=false -DgroupId=z.z.w -DartifactId=scalacase -Dversion=1.0-SNAPSHOT -DarchetypeGroupId=org.scala-tools.archetypes -DarchetypeArtifactId=scala-archetype-simple -DarchetypeVersion=1.2 -DarchetypeRepository=http://scala-tools.org/repo-releases org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate
-
+mvn archetype:generate -DarchetypeGroupId=net.alchim31.maven -DarchetypeArtifactId=scala-archetype-simple -DremoteRepositories=http://scala-tools.org/repo-releases -DgroupId=z.z.w.test -DartifactId=scala -Dversion=1.0-SNAPSHOT
 
 archetype:generate
 871 -- quickstart
