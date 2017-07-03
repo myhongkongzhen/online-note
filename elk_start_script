@@ -3,3 +3,9 @@
 
 .\scripts\import_dashboards.exe -file ..\beats-dashboards-5.4.2.zip -es http://localhost:9200
 
+output {
+  exec {
+    tags => [xboxerror]
+    command => "echo '%{@timestamp} %{@source}: %{@message}' | mail -s xbox_phplog_error_message xboxdev@xman.com"
+        }
+}
