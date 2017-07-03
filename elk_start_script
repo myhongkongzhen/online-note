@@ -9,3 +9,18 @@ output {
     command => "echo '%{@timestamp} %{@source}: %{@message}' | mail -s xbox_phplog_error_message xboxdev@xman.com"
         }
 }
+
+
+
+
+teach you to write logstash plugin
+http://www.cnblogs.com/xing901022/p/5259750.html
+
+
+
+
+
+
+
+
+
