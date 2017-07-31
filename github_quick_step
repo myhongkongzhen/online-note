@@ -24,7 +24,7 @@ git tag // check tags
 git co -b v5.1.1 // checkout tag v5.1.1
 
 
-
+git submodule add https://github.com/iissnan/hexo-theme-next themes/next
 
 
 
