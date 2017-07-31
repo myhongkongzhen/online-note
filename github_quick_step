@@ -18,6 +18,10 @@ git push -u origin master
 git fetch origin   
 git merge origin/master
 
+============================================
+
+git tag // check tags
+git co -b v5.1.1 // checkout tag v5.1.1
 
 
 
