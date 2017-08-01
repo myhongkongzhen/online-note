@@ -23,8 +23,53 @@ git merge origin/master
 git tag // check tags
 git co -b v5.1.1 // checkout tag v5.1.1
 
+========================================================================================
 
 git submodule add https://github.com/iissnan/hexo-theme-next themes/next
+
+git remote add origin https://github.com/myhongkongzhen/hexo_blog_src.git 
+
+git submodule add https://github.com/myhongkongzhen/myhongkongzhen.github.io.git .deploy_git
+
+========================================================================================
+
+
+git config --global credential.helper wincred // https deploy no need to input username & password
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
