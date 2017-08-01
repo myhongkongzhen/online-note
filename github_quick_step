@@ -36,6 +36,7 @@ git submodule add https://github.com/myhongkongzhen/myhongkongzhen.github.io.git
 
 git config --global credential.helper wincred // https deploy no need to input username & password
 
+git config --global core.ignorecase false //开启Git大小写敏感
 
 
 
