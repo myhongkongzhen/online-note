@@ -10,6 +10,7 @@ export CLASSPATH=$JAVA_HOME/lib:$CLASSPATH
 export PATH=$JAVA_BIN:$PATH
 
 
+watch -d -n1 'ls -larc es*'
 
 
 
