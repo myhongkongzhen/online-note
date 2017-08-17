@@ -45,6 +45,9 @@ git config --global core.ignorecase false //开启Git大小写敏感
 git br -a
 
 
+========================================================================================
+
+git show commit_id # show details for commit
 
 
 
