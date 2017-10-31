@@ -1,0 +1,41 @@
+public static String getName(User u) {
+    return Optional.ofNullable(u)
+                    .map(user->user.name)
+                    .orElse("Unknown");
+}
+
+
+
+public static String getChampionName(Competition comp) throws IllegalArgumentException {
+    return Optional.ofNullable(comp)
+            .map(c->c.getResult())
+            .map(r->r.getChampion())
+            .map(u->u.getName())
+            .orElseThrow(()->new IllegalArgumentException("The value of param comp isn't available."));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
