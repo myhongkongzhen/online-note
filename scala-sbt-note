@@ -9,5 +9,8 @@ sonatype-oss-releases
 sonatype-oss-snapshots
 
 
-
+11	Null	null或空引用
+12	Nothing	每种其他类型的亚型; 不包括无值
+13	Any	任何类型的超类型; 任何对象的类型为Any
+14	AnyRef	任何引用类型的超类型
 
