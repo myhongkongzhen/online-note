@@ -14,3 +14,22 @@ sonatype-oss-snapshots
 13	Any	任何类型的超类型; 任何对象的类型为Any
 14	AnyRef	任何引用类型的超类型
 
+
+[repositories]
+#local
+maven-centrl: http://central.maven.org
+public: http://maven.aliyun.com/nexus/content/groups/public/#这个maven
+typesafe: http://dl.bintray.com/typesafe/ivy-releases/ , [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly#这个ivy
+ivy-sbt-plugin:http://dl.bintray.com/sbt/sbt-plugin-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]#这个ivy
+Nexus osc : http://maven.oschina.net/content/groups/public/  
+Nexus osc thirdparty : http://maven.oschina.net/content/repositories/thirdparty/  
+typesafe1: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly  
+typesafe2: http://repo.typesafe.com/typesafe/releases/  
+sbt-plugin: http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/  
+sonatype: http://oss.sonatype.org/content/repositories/snapshots  
+uk_maven: http://uk.maven.org/maven2/  
+ibibli: http://mirrors.ibiblio.org/maven2/  
+repo2: http://repo2.maven.org/maven2/  
+maven-central
+sonatype-oss-releases
+sonatype-oss-snapshots
