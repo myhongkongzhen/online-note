@@ -1,4 +1,23 @@
 
+
+
+
+
+
+
+
+
+变量 match{
+       Case值 => 函数体
+       Case值 => 函数体
+       Case_  => 函数体
+}
+
+ val变量名 = 函数名+空格+_
+ 
+匿名函数格式：
+Val 变量名 = （参数：类型） => 函数体
+
 [repositories]
 #local
 public: http://maven.aliyun.com/nexus/content/groups/public/#这个maven
