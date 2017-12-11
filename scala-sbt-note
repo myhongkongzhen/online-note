@@ -28,8 +28,8 @@ public: http://maven.aliyun.com/nexus/content/groups/public/#这个maven
 typesafe:http://dl.bintray.com/typesafe/ivy-releases/ , [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly#这个ivy
 ivy-sbt-plugin:http://dl.bintray.com/sbt/sbt-plugin-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]#这个ivy
 sonatype-oss-releases
-
 sonatype-oss-snapshots
+
 ==============================================================================================
 
 11	Null	null或空引用
@@ -56,3 +56,19 @@ repo2: http://repo2.maven.org/maven2/
 maven-central
 sonatype-oss-releases
 sonatype-oss-snapshots
+
+==============================================================================================
+
+[repositories]
+  local
+  mvn-local-host: file:///c:/SWDTOOLS/mvn3
+  maven-central: http://central.maven.org/maven2/
+  dl-repo: http://dl.bintray.com/sbt/sbt-plugin-releases, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]  
+  repox-local: http://localhost:8078/
+  repox-ivy-local: http://localhost:8078/,  [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  aliyun-repo: http://maven.aliyun.com/nexus/content/groups/public/
+  typesafe: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+  repox-maven: http://repox.gtan.com:8078/
+  repox-ivy: http://repox.gran.com:8078/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  webjars: http://www.webjars.org/
+
