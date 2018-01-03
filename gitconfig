@@ -2,18 +2,24 @@
 	co = checkout
 	ci = commit
 	br = branch
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	mg = merge  --no-ff
+    	push = push -f
+    	pushm = push -f origin master
+	lg = log -20 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	mg = merge --no-ff
+	sh = stash
 [i18n]
 [gui]
 	encoding = utf-8
 [core]
 	autocrlf = true
 	quotepath = off
-	excludesfile = d:\\02_workspace\\.gitignore_global
+	excludesfile = C:\\Users\\Z_Z.W\\gitignore_global.txt
+	ignorecase = false
 [http]
 	postBuffer = 524288000
-[user] 
+	proxy = http://Z_Z.W:8080
+	sslVerify = false
+[user]
 
 [user]
 	email = myhongkongzhen@gmail.com
@@ -23,3 +29,9 @@
 	tool = vimdiff
 [difftool]
 	prompt = No
+[color]
+	ui = auto
+[https]
+	proxy = https://Z_Z.W:8080
+[credential]
+	helper = wincred
