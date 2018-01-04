@@ -1,0 +1,20 @@
+step 1. setting Node path
+
+SET NODE_PATH=c:\SWDTOOLS\node_config\node_global
+SET NODE_HOME=c:\SWDTOOLS\node-v8.9.3-win-x64
+SET PATH=%NODE_PATH%;%NODE_HOME%;%PATH%
+
+step 2. setting proxy
+
+npm config set proxy=http://user:pass@host:port/ -g
+npm config set https_proxy=https://user:pass@host:port/ -g
+npm config set strict-ssl false -g 
+
+step 3. setting prefix & cache
+
+npm config set prefix c:\SWDTOOLS\node_config\node_global -g
+npm config set cache c:\SWDTOOLS\node_config\node_cache -g
+
+step 4. verifying npm
+
+npm install -g bower --verbose  ==> to use test
