@@ -17,4 +17,13 @@ npm config set cache c:\SWDTOOLS\node_config\node_cache -g
 
 step 4. verifying npm
 
-npm install -g bower --verbose  ==> to use test
+npm install -g bower --verbose  
+
+step 5. installing others
+
+
+
+
+
+
+
