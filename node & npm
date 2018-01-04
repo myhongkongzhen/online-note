@@ -21,6 +21,8 @@ npm install -g bower --verbose
 
 step 5. installing others
 
+npm install -g @angular/cli   # angular 5
+bower install angular
 
 
 
