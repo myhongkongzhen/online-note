@@ -1,7 +1,17 @@
 
 
 
+scalac Hello.scala
 
+javap -private Person
+C:\Users\Z_Z.W\workspace\IDEA\PRIVATE\scala-training>javap -private Person.class
+Compiled from "Person.scala"
+public class Person {
+  private java.lang.String name;
+  public java.lang.String name();
+  public void name_$eq(java.lang.String);
+  public Person();
+}
 ==============================================================================================
 
 Range可以是数字范围，并且表示为i到j。 左箭头←运算符被称为生成器，因为它从一个范围中生成单个值
