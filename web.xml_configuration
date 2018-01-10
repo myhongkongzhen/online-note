@@ -9,3 +9,6 @@ web.xml有多项标签，在其加载的过程中顺序依次为：context-param
 
 可以看出，web.xml 的加载顺序是：ServletContext -> context-param -> listener -> filter -> servlet ，
 而同个类型之间的实际程序调用的时候的顺序是根据对应的 mapping 的顺序进行调用的。
+
+
+Related better documnet : http://blog.csdn.net/believejava/article/details/43229361
