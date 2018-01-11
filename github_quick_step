@@ -23,6 +23,16 @@ git merge origin/master
 git tag // check tags
 git co -b v5.1.1 // checkout tag v5.1.1
 
+git tag -d Release_20171111(PFS-2093)  // delete wrong tag
+
+git tag Release_20171111(PFS-2093) 7b805bd // create new tag base on commit version
+
+git show Release_20171111(PFS-2093) // check tag content
+
+git push origin Release_20171111(PFS-2093) // push tag
+
+
+
 ========================================================================================
 
 git submodule add https://github.com/iissnan/hexo-theme-next themes/next
