@@ -9,3 +9,59 @@ step 3
  mvn clean mybatis-generator:generate
 
 
+============================================================
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                      ~
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.                       ~
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.                                                  ~
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.                    ~
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.                                                                      ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!DOCTYPE generatorConfiguration PUBLIC
+		"-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	
+	<!-- !!!! Driver Class Path !!!! -->
+	<classPathEntry location="com\h2database\h2\1.4.196\h2-1.4.196.jar"/>
+	
+	<context id="context" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true"/>
+			<property name="suppressDate" value="true"/>
+		</commentGenerator>
+		
+		<!-- !!!! Database Configurations !!!! -->
+		<jdbcConnection driverClass="org.h2.Driver" connectionURL="jdbc:h2:file:./src/main/resources/db/zzwu;AUTO_SERVER=TRUE" userId="sa" password=""/>
+		
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false"/>
+		</javaTypeResolver>
+		
+		<!-- !!!! Model Configurations !!!! -->
+		<javaModelGenerator targetPackage="z.z.w.template.cr.domain" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true"/>
+			<property name="constructorBased" value="false"/>
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator>
+		
+		<!-- !!!! Mapper XML Configurations !!!! -->
+		<sqlMapGenerator targetPackage="z.z.w.template.cr.mapper" targetProject="src/main/resources/mapper">
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+		
+		<!-- !!!! Mapper Interface Configurations !!!! -->
+		<javaClientGenerator targetPackage="z.z.w.template.cr.mapper" targetProject="src/main/java"
+		                     type="XMLMAPPER">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+		
+		<!-- !!!! Table Configurations !!!! -->
+		<table tableName="T_CHANGE_ORDER_LOG" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+		       enableUpdateByExample="false"/>
+	</context>
+</generatorConfiguration>
+
