@@ -1,0 +1,11 @@
+step 1
+ creating a file :generatorConfig.xml
+ src/main/resources/generatorConfig.xml
+
+step 2
+ setup generatorConfig.xml
+
+step 3
+ mvn clean mybatis-generator:generate
+
+
