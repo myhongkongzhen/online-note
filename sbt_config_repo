@@ -1,0 +1,43 @@
+# Set the java args to high
+
+-Xmx2048M
+
+-XX:ReservedCodeCacheSize=2048m
+
+# Set the extra SBT options
+
+-Dsbt.log.format=true
+
+-Dsbt.global.base=c:/Z_Z.WTOOLS/sbt/.sbt
+-Dsbt.ivy.home=c:/Z_Z.WTOOLS/sbt/.sbt/.ivy 
+-Dsbt.boot.directory=c:/Z_Z.WTOOLS/sbt/.sbt/boot
+-Dsbt.override.build.repos=true
+-Dsbt.repository.config=c:/Z_Z.WTOOLS/sbt/conf/repo.properties
+-DSBT_CREDENTIALS="c:/Z_Z.WTOOLS/sbt/.sbt/.credentials"
+-Dhttp.proxyHost=Z_Z.W
+-Dhttp.proxyPort=Z_Z.W
+-Dhttp.proxyUser=Z_Z.W
+-Dhttp.proxyPassword=Z_Z.W
+-Dhttps.proxyHost=Z_Z.W
+-Dhttps.proxyPort=Z_Z.W
+-Dhttps.proxyUser=Z_Z.W
+-Dhttps.proxyPassword=Z_Z.W
+
+
+=================================================================
+repo.properties
+
+[repositories]
+  local
+  mvn-local-host: file:///c:/SWDTOOLS/mvn3
+  maven-central: http://central.maven.org/maven2/
+  dl-repo: http://dl.bintray.com/sbt/sbt-plugin-releases, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  typesafe: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+  repox-maven: http://repox.gtan.com:8078/
+  repox-ivy: http://repox.gran.com:8078/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  webjars: http://www.webjars.org/
+  aliyun-repo: http://maven.aliyun.com/nexus/content/groups/public/
+  
+  
+  
+  
