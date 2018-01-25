@@ -2,8 +2,8 @@
 	co = checkout
 	ci = commit
 	br = branch
-    	push = push -f
-    	pushm = push -f origin master
+        push = push -f
+        pm = push -f origin master
 	lg = log -20 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	mg = merge --no-ff
 	sh = stash
@@ -17,7 +17,7 @@
 	ignorecase = false
 [http]
 	postBuffer = 524288000
-	proxy = http://Z_Z.W:8080
+	proxy = http://Z_Z.W:Z_Z.W@Z_Z.W:8080
 	sslVerify = false
 [user]
 
@@ -30,8 +30,22 @@
 [difftool]
 	prompt = No
 [color]
-	ui = auto
+	diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+    
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = magenta bold
+  
+[color "branch"]
+  remote = yellow bold
+  
 [https]
-	proxy = https://Z_Z.W:8080
+	proxy = https://Z_Z.W:Z_Z.W@Z_Z.W:8080
 [credential]
 	helper = wincred
