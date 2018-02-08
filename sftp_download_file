@@ -1,1 +1,26 @@
 get remote_file_name
+想改变名字 直接指定一个不同的文件名来复制远程文件即可：
+
+get remote_file_name local_file_name
+
+递归的复制一个文件夹里面的内容：
+
+get -r some_directory_name
+
+保持文件的权限访问位的设置和访问时间：
+
+get -Pr some_directory_name
+
+将文件上传到远程主机：
+
+put local_file_name
+
+上传整个文件夹：
+
+put -r local_directory_name
+
+
+
+
+
+
