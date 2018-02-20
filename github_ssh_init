@@ -52,6 +52,21 @@ Host github.com
     HostName github.com
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/github_rsa
+    
+ -----------------------------------------------   
+    # Default github user(first@mail.com)  默认配置，一般可以省略
+Host github.com
+Hostname github.com
+User git
+Identityfile ~/.ssh/github
+# second user(second@mail.com)  给一个新的Host称呼
+Host second.github.com  // 主机名字，不能重名
+HostName github.com   // 主机所在域名或IP
+User git  // 用户名称
+IdentityFile C:/Users/username/.ssh/id_rsa_second  // 私钥路径
+   -----------------------------------------------     
+    
+    
 5，目录结构
 
 
