@@ -1,3 +1,35 @@
+
+
+
+
+
+ssh-keygen -t rsa -C "myhongkongzhen@gmail.com"
+
+ssh-keygen -t rsa -C "myhongkongzhen@office.com" -f c:/SWDTOOLS/ssh_config/office-rsa
+
+ssh-keygen -t rsa -C "myhongkongzhen@gmail.com" -f c:/SWDTOOLS/ssh_config/myhongkongzhen-rsa
+
+$ ssh-add  -k c:/SWDTOOLS/ssh_config/office-rsa
+$ ssh-add  -k c:/SWDTOOLS/ssh_config/myhongkongzhen-rsa
+
+$ ssh-agent bash
+ 
+$ ssh-add -l
+
+        !!!! ssh-add -D # 可以通过 ssh-add -D 来清空私钥列表
+
+
+
+
+
+
+
+
+
+
+
+
+
 摘要: 我们在日常工作中会遇到公司有个gitlab，还有些自己的一些项目放在github上。这样就导致我们要配置不同的ssh-key对应不同的环境。
      我们在日常工作中会遇到公司有个gitlab，还有些自己的一些项目放在github上。这样就导致我们要配置不同的ssh-key对应不同的环境。下面我们来看看具体的操作：
 
