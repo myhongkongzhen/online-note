@@ -1,6 +1,6 @@
 
 
-
+ssh -vT git@github.com
 
 
 ssh-keygen -t rsa -C "myhongkongzhen@gmail.com"
