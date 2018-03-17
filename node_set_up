@@ -17,6 +17,8 @@ Verify : node -v and npm -v
 
 To install a version that will be released in the future, run:
 
+npm install npm@latest -g
+or
 npm install npm@next -g.
         
 Step 2. 
