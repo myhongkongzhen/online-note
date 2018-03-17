@@ -3,7 +3,7 @@ Step 1. Set up the Development Environment
 -------------------------------------------
 Install Node.js® and npm if they are not already on your machine.
 
-c:\SWDTOOLS\node-v8.10.0-win-x64\etc\npmrc --- global
+c:\SWDTOOLS\node-v8.10.0-win-x64\etc\npmrc --- globally
 
 proxy=http://user:pass@host:port/
 https_proxy=https://user:pass@host:port/
@@ -21,7 +21,9 @@ npm install npm@latest -g
 or
 npm install npm@next -g.
         
-Step 2. 
+Step 2. Install angular
+
+npm install -g @angular/cli --- globally
 
 
 
