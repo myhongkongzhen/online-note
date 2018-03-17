@@ -25,3 +25,15 @@ Step 6 Verify angular version
 
 ng -v
 
+Step 7 Modify npm start
+
+add file: proxy.conf.json
+{
+"/api" :{
+"target" : "http://localhost:8080",
+"secure" : false
+        }
+}
+
+package.json
+start": "ng serve --open --proxy-config proxy.conf.json",
