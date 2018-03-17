@@ -1,0 +1,22 @@
+
+Step 1. Set up angular client
+
+npm install -g @angular/cli
+
+Step 2. Create a new project
+
+ng new my-app
+
+Step 3. Cloned a repo
+
+jump straight to 
+npm install
+
+Step 4. Server the application
+
+cd my-app
+ng serve --open --port 8888
+
+
+
+
