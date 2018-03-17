@@ -1,0 +1,27 @@
+
+Step 1. Set up the Development Environment
+-------------------------------------------
+Install Node.js® and npm if they are not already on your machine.
+
+c:\SWDTOOLS\node-v8.10.0-win-x64\etc\npmrc --- global
+
+proxy=http://user:pass@host:port/
+https_proxy=https://user:pass@host:port/
+registry=http://registry.npmjs.org/
+strict-ssl=false
+prefix=c:\SWDTOOLS\node_config\node_global
+cache=c:\SWDTOOLS\node_config\node_cache
+python=C:\SWDTOOLS\Python27\python.exe
+
+Verify : node -v and npm -v
+
+To install a version that will be released in the future, run:
+
+npm install npm@next -g.
+        
+Step 2. 
+
+
+
+
+
