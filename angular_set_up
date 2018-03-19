@@ -48,6 +48,32 @@ npm install -g bower
 npm install karma --save-dev
 npm install --save-dev jasmine
 
+npm install -g protractor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
