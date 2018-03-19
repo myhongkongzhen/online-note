@@ -44,6 +44,10 @@ npm install -g grunt-cli
 
 npm install -g bower
 
+// Test
+npm install karma --save-dev
+npm install --save-dev jasmine
+
 
 
 
