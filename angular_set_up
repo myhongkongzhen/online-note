@@ -38,8 +38,9 @@ add file: proxy.conf.json
 package.json
 start": "ng serve --open --proxy-config proxy.conf.json",
 
+Step 7 install more useful plugins
 
-
+npm install -g grunt-cli
 
 
 
