@@ -12,7 +12,9 @@ export PATH=$JAVA_BIN:$PATH
 
 watch -d -n1 'ls -larc es*'
 
-
+[wenchao@centosTest ~]$ sudo su -
+[sudo] password for wenchao:
+[root@centosTest ~]#
 
 
 
