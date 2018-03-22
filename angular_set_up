@@ -51,6 +51,13 @@ npm install --save-dev jasmine
 npm install -g protractor
 
 
+Step 8. angular 2
+
+ng new my-app
+ng server
+ng g c new-component
+ng g s -m app.module 
+
 
 
 
