@@ -1,0 +1,36 @@
+
+
+
+set up gradle path
+setx GRADLE_HOME "E:\gradle"  
+setx Path ".;%%GRADLE_HOME%%\bin;"  
+setx M2_HOME %MAVEN_HOME% 
+
+
+1 changing gradle .gradle path <<<<< the same as maven local repo
+setx GRADLE_USER_HOME c:\SWDTOOLS\gradle_repo
+
+
+
+
+
+maven to gradle
+
+gradle init --type pom
+
+gradle 自带的插件创建项目目录结构
+gradle init --type java-library
+
+gradle init -x wrapper // no gradle wrapper download
+
+
+using maven local repo
+
+repositories {  
+   mavenLocal()  
+} 
+
+
+
+
+
