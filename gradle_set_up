@@ -1,0 +1,9 @@
+
+set up gradle path
+setx GRADLE_HOME "E:\gradle"  
+setx Path ".;%%GRADLE_HOME%%\bin;"  
+
+
+1 changing gradle .gradle path <<<<< the same as maven local repo
+setx GRADLE_USER_HOME c:\SWDTOOLS\gradle_repo
+
