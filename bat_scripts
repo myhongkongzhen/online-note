@@ -1,5 +1,11 @@
 
 
-windows set up user env
+1.windows set up user env
+  setx GRADLE_HOME "E:\gradle"  
 
-setx GRADLE_HOME "E:\gradle"  
+2.put user env to PATH
+  setx Path ".;%%GRADLE_HOME%%\bin;"  
+  
++++++++++++++++++++++++++++++++++++++++++++++
+
+
