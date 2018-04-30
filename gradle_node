@@ -12,6 +12,27 @@ task showArgs << {
 
 
 
+gradle init --type java-application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
