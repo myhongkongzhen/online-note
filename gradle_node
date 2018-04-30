@@ -1,0 +1,5 @@
+
+Initialization 读取setting.gradle文件，分辨项目是单项目结构还是多项目结构。在这个阶段会生成一个全局Gradle对象
+Configuration 读取每个参与编译的项目的build.gradle文件，执行所有项目的task的内容（除了doLast、doFrist以外）。并会根据task的关系组成一个有向图。
+Execution 根据有向图执行Task的内容。
+
