@@ -12,3 +12,23 @@ keytool -import -alias example -keystore  C:\Program Files (x86)\Java\jre1.6.0_2
 
 You will be asked for password which default is changeit
 
+
+
+
+
+.\keytool -import -alias gradle -keystore  c:\SWDTOOLS\jdk1.8.0_151\jre\lib\security\cacerts -file c:\SWDTOOLS\cert_files\services.gradle.org.cer
+
+changeit
+
+
+
+
+
+
+
+
+
+
+
+
+
