@@ -4,7 +4,10 @@ Configuration 读取每个参与编译的项目的build.gradle文件，执行所
 Execution 根据有向图执行Task的内容。
   doFirst 与 doLast 都是在Execution阶段执行
 
-
+task showArgs << {
+    println "Hello World"
+}
+<<就是doLast的缩写，注意新的版本gradle已经建议不要这么写了。
 
 
 
