@@ -1,0 +1,67 @@
+
+def a = 1
+def b = "abc"
+def int a
+
+def a ='huangkai'
+def b = "i am $a"
+def lines = ''' abc
+
+
+       abc
+
+       end '''
+
+字符串有三种格式
+
+” 代表完全按照符号内部的内容
+“” 如果内部有$变量值的话，先取变量值
+”’ ”’代表文本支持换行
+
+def a = [5,'string',true]
+
+println(a.getAt(2));
+
+ def map = ["a":100,"b":200]
+
+ println(map.getAt("b"));
+
+Closure
+def xxx = {a , b ->
+
+   println(a);
+   println(b);
+
+ }
+ abc.call(100,"huangkai");
+def xxx ={
+    println(it);
+}
+
+xxx.call(10086)
+
+def a = [5,'string',true]
+
+def b ={
+ println(it);
+ }
+
+a.each(b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
