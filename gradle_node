@@ -15,9 +15,37 @@ task showArgs << {
 gradle init --type java-application
 
 
+========================================================
+构建并单元测试
 
+$ gradle build
+只构建不执行单元测试
 
+$ gradle build -x test
+执行单元测试
 
+$ gradle test
+运行
+
+$ gradle run
+
+---------------------------------------------------------
+C:\Users\Z_Z.W\workspace\IDEA\new_private\micro-service-gradle>gradle -q projects
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+Root project 'micro-service-gradle'
++--- Project ':core'
++--- Project ':eureka-server''
++--- Project ':jira-api'
++--- Project ':jira-service'
++--- Project ':repository-service'
+\--- Project ':shared'
+
+To see a list of the tasks of a project, run gradle <project-path>:tasks
+For example, try running gradle :core:tasks
 
 
 
