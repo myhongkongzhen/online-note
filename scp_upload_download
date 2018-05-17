@@ -1,0 +1,29 @@
+上传
+
+上传文件”localhost.txt”
+
+scp localhost.txt username@remotehost:/some/remote/directory
+上传本地目录”localhost”
+
+scp -r localhost/ username@remotehost:/some/remote/directory
+把文件”localhost.txt”从remotehost-1上传到remotehost-2
+
+scp username@remotehost-1:~/localhost.txt your_name@remotehost-2:/some/directory
+上传多个文件”localhost.txt”,”localhost2.txt”
+
+scp localhost.txt localhost2.txt username@remotehost:~
+下载
+
+下载文件”localhost.txt”
+
+scp username@remotehost:localhost.txt /some/local/directory
+下载目录”localhost”
+
+scp -r username@remotehost:~/localhost .
+下载多个文件
+
+scp username@remotehost:~/\{localhost.txt,localhost2.txt\} .
+
+指定端口
+scp -P 2208 localhost.txt username@remotehost:~
+
